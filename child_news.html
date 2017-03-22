@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/less" href="css/index.less"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/less.min.js" ></script>
+	</head>
+	<body>
+		<div class="child_banner">
+			<div class="ban_menu">
+				<div class="cotainer">
+					<a class="logo" href="#"><img src="img/logo.png"></a>
+					<ul class="menu">
+						<li class="cur"><a href="index.html">首页</a><span></span></li>
+						<li><a href="child_gw_cont.html">全部岗位</a><span></span></li>
+						<li><a href="child_zx.html">动态咨询</a><span></span></li>
+						<li><a href="child_sjjd.html">志愿者服务</a><span></span></li>
+						<li><a href="child_jfdh.html">积分兑换</a><span></span></li>
+					</ul>
+					<div class="login_a"><a>登录</a>&nbsp;|&nbsp;<a>注册</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="content" style="background: #f9f9f9;">
+			<div class="cotainer">
+				<div class="child_sjjd_cont">
+					<div class="news">
+						<div class="news_tit">
+							<h2>“放飞梦想”2015年宁波市就业创业服务月宁波大学招聘会在我校顺利举行</h2>
+							<div class="news_tit_note">
+								<p>作者：<span>哈哈</span></p>
+								<p>来源：<span>新浪网</span></p>
+								<p>发布时间： <span>2015-12-08</span></p>
+								<p>浏览次数：<span>183</span></p>
+							</div>
+						</div>
+						<img src="img/news.jpg" class="news_img">
+						<div class="news_txt">
+							 2015年12月5日，浙江省教育厅2016届高校毕业生招聘月（综合类）暨“放飞梦想”2015年宁波市就业创业服务月宁波大学招聘会成功举行。本次招聘会由浙江省教育厅、宁波市人力资源和社会保障局主办，浙江省高校毕业生就业指导服务中心、宁波市就业管理服务局、宁波市人才服务中心、宁波大学承办。共有来自全国各地420余家企事业单位参加，招聘单位除了宁波本地企事业单位，还有来自北京、上海、江苏、杭州等地的用人单位，本次招聘会为毕业生提供近13000多个就业岗位，吸引了来自本校及省内高校万余名毕业生前来参加。<br>今年我校招聘会呈现以下几个特点：首先，用人单位需求踊跃，前期报名我校招聘会企业数达600多家，招聘会当天参会企业涵盖贸易进出口、服装、互联网技术、建筑、教育培训、机械制造等10多个行业分类，专业需求涵盖我校所有专业，其中世界500强企业10余家，中国500强企业20家，各行业领军龙头企业40余家。本次招聘会为了方便毕业生对比了解行业内不同企业的招聘需求，按照行业门类布展分配摊位，方便不同专业需求学生提高应聘效率，同时专场与综合相结合，宁波市住房和城乡建设委员会组织下属建筑单位在黄庆苗楼分会场举办2015年宁波市建筑业专场招聘会，象山人力资源和社会保障局组织象山知名企业组团招聘，形成招聘规模效应，吸引众多专业毕业生前来应聘；第二，招聘会现场不少我校校友、教师、在校学生成功创业后前来设摊，这些创业校友、在校生的到来不仅让毕业生在应聘过程中感到亲切、备受鼓舞，也给在校大学生树立了很好的榜样，激发了学生的创业热情，更激励有志创新创业的学生自主开展创业实践，从而开启了大学生创业促就业的积极就业新模式。。 
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="background: #20988e; color: #FFFFFF;">
+			<div class="cotainer">
+				地址：浙江省宁波市海曙区大梁街47号（天之海大厦对面） 邮编：315000<br />
+				©2016-2020 宁波市海曙区教育局 版权所有 | 党政办维护 | 浙ICP备05008987-1 | 甬安备33020300002428 |<br />
+				技术支持：宁波市卓信信息技术有限公司
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
+		jQuery(".picMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:25});
+
+			$(".search_txt").click(function  () {
+				$(".search_txt span").hide()
+				$(".search_txt input").focus()
+			});
+			$(".search_txt input").blur(function  () {
+				if($(this).val()==""){
+					$(".search_txt span").show()
+				}
+			});
+			$(".menu li").hover(function  () {
+				$(".menu li").removeClass("cur");
+				$(this).addClass("cur");
+			})
+			$(".picMarquee-left .picList li").hover(function  () {
+				var s=$(this).index()-1;
+				console.log(s)
+				$(".content .cont_main").hide();
+				$(".content .cont_main").eq(s).show();
+			})
+		</script>
+
+	</body>
+</html>

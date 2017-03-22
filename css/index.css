@@ -1,0 +1,39 @@
+*{padding: 0; margin: 0;}
+html,body{font-family:"微软雅黑","宋体",arial; font-size: 14px; margin: 0; padding: 0;color: #000000 ; }
+h1,h2,h3,h4,h5,h6{font-style: normal;}
+ul,li{list-style: none;}
+img{border: 0px; width: 100%;}
+a{text-decoration: none; color: inherit; }
+.warp{clear: both;}
+.cotainer{width: 1000px; margin: 0 auto;}
+
+
+/* 本例子css */
+.slideBox{ width:100%; overflow:hidden; position:relative;  }
+.slideBox .hd{ height:15px; overflow:hidden; position:absolute; right:50%; bottom:35px; z-index:1; }
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:2px;  width:15px; height:15px; line-height:14px; text-align:center;background:url(../img/icon.png) -39px -43px no-repeat; cursor:pointer; }
+.slideBox .hd ul li.on{ background:url(../img/icon.png) -39px -62px no-repeat; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.slideBox .bd li{ zoom:1; vertical-align:middle; }
+.slideBox .bd img{ width:100%; display:block;  }
+
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../img/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+/* 本例子css */
+#pageGro{ width:300px; height:25px; margin:0px auto; padding-top:30px; padding-bottom: 50px;}
+#pageGro div,#pageGro div ul li{ font-size:12px; color:#999; line-height:23px; float:left; margin-left:5px;}
+#pageGro div ul li{ width:22px; text-align:center; border:1px solid #999; cursor:pointer;}
+#pageGro div ul li.on{ color:#fff; background:#20988E; border:1px solid #3c90d9;}
+#pageGro .pageUp,#pageGro .pageDown{ width:55px;padding: 0px 5px; border:1px solid #999; cursor:pointer;}
+
+
+
+
+

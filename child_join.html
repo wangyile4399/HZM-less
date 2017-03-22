@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/less" href="css/index.less"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script type="text/javascript" src="js/less.min.js" ></script>
+	</head>
+	<body>
+		<div class="child_banner">
+			<div class="ban_menu">
+				<div class="cotainer">
+					<a class="logo" href="#"><img src="img/logo.png"></a>
+					<ul class="menu">
+						<li class="cur"><a href="index.html">首页</a><span></span></li>
+						<li><a href="child_gw_cont.html">全部岗位</a><span></span></li>
+						<li><a href="child_zx.html">动态咨询</a><span></span></li>
+						<li><a href="child_sjjd.html">志愿者服务</a><span></span></li>
+						<li><a href="child_jfdh.html">积分兑换</a><span></span></li>
+					</ul>
+					<div class="login_a"><a>登录</a>&nbsp;|&nbsp;<a>注册</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="cotainer">
+				<div class="child_sjjd_cont">
+					<div class="join">
+						<img src="img/jion.jpg">
+						<div class="jion_table">
+							<div class="tit">
+								<h3>志愿者服务表</h3>
+								<p>填表日期：2016-03-05</p>
+							</div>
+							<div class="table_warp">
+								<div class="li1"><span class="word"><i>*</i>姓名：</span><input type="text"></div>
+								<div class="li1"><span class="word"><i>*</i>电话：</span><input type="text"></div>
+							</div>
+							<div class="table_warp">
+								<div class="li2"><span class="word">服务区域：</span><input></div>
+							</div>
+							<div class="table_warp">
+								<div class="li2"><span class="word">服务意向：</span><textarea class="textbox1" placeholder="输入你想要服务的内容"></textarea></div>
+							</div>
+							<div class="table_warp">
+								<div class="li2"><span class="word">个人介绍：</span><textarea class="textbox2" placeholder="输入你自己的资料"></textarea></div>
+							</div>
+							<div class="table_btn"><input type="button" value="确定报名"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer" style="background: #20988e; color: #FFFFFF;">
+			<div class="cotainer">
+				地址：浙江省宁波市海曙区大梁街47号（天之海大厦对面） 邮编：315000<br />
+				©2016-2020 宁波市海曙区教育局 版权所有 | 党政办维护 | 浙ICP备05008987-1 | 甬安备33020300002428 |<br />
+				技术支持：宁波市卓信信息技术有限公司
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery1.42.min.js" ></script>
+		<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js" ></script>
+
+		<script type="text/javascript">
+		jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true,trigger:"click"});
+		jQuery(".picMarquee-left").slide({mainCell:".bd ul",autoPlay:true,effect:"leftMarquee",vis:5,interTime:25});
+
+			$(".search_txt").click(function  () {
+				$(".search_txt span").hide()
+				$(".search_txt input").focus()
+			});
+			$(".search_txt input").blur(function  () {
+				if($(this).val()==""){
+					$(".search_txt span").show()
+				}
+			});
+			$(".menu li").hover(function  () {
+				$(".menu li").removeClass("cur");
+				$(this).addClass("cur");
+			})
+			$(".picMarquee-left .picList li").hover(function  () {
+				var s=$(this).index()-1;
+				console.log(s)
+				$(".content .cont_main").hide();
+				$(".content .cont_main").eq(s).show();
+			})
+		</script>
+
+	</body>
+</html>

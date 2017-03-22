@@ -1,0 +1,21 @@
+*{padding: 0; margin: 0;}
+html,body{font-family: "微软雅黑",arial,"arial black"; font-size: 14px;}
+.main_box{position: absolute; left: 50%; margin-left: -200px; margin-top: 10%; width:400px;padding: 20px;border-radius: 10px; -webkit-border-radius:10px ;-moz-border-radius:10px ;-ms-border-radius:10px ;-o-border-radius:10px ;  background: rgba(255,255,255,.5);filter: progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#7fffffff', endColorstr = '#7fffffff' );
+-ms-filter: progid:DXImageTransform.Microsoft.gradient( GradientType = 0,startColorstr = '#7fffffff', endColorstr = '#7fffffff' );}
+.main_cont{background: #ffffff; border-radius: 10px;  position: relative; -webkit-border-radius:10px ;-moz-border-radius:10px ;-ms-border-radius:10px ;-o-border-radius:10px ; }
+.main_cont h2{font-weight: normal;height: 50px; _margin-top: 10px; position: relative; line-height: 50px; color: #FFFFFF; width: 100%; text-align: left;   font-size: 16px; padding-bottom: 5px; background:#22978d; border-radius: 10px 10px 0 0;-webkit-border-radius:10px 10px 0 0 ;-moz-border-radius:10px 10px 0 0;-ms-border-radius:10px 10px 0 0;-o-border-radius:10px 10px 0 0 ; }
+.main_cont h2 img{width: 100px; position: absolute; left: 50%; margin-left: -50px; top: -20px;}
+.main_cont h2 a{color: #FFFFFF !important; text-decoration: none;padding-left: 10px;}
+.logo{display: block; margin: 10px auto;}
+.text{width: 380px; margin: 0 auto; padding-top:10px ; padding-bottom: 50px; position: relative; left: 50%;margin-left: -190px;*margin-left: -260px;_margin-left: -280px;}
+.text label{display: block;padding-bottom:30px ; font-size: 16px;position: relative;height: 40px; line-height: 40px; overflow: hidden;position: relative;}
+.text label span{text-align: right;width: 85px; display: inline-block; padding-right: 10px; float: left;}
+.text label span i{color: red; padding-right: 5px; }
+.text label input{font-size: 14px; float: left; height: 40px; line-height: 20px; *line-height: 40px; outline: none; border: 1px solid #dddddd; padding-left: 15px; width: 260px;border-radius: 5px; -webkit-border-radius:5px ;-moz-border-radius:5px ;-ms-border-radius:5px ;-o-border-radius:5px ;}
+.text label input.send{width: 100px;padding-left: 0; margin-left: 5px; background: #dedede; cursor: pointer;}
+.yzm{position: absolute; left: 100px; top: 3px; width: 105px; height: 35px; border-right: 1px solid #DDDDDD;}
+.yzm_ipt{width: 150px !important;}
+.yzm_ipt1{padding-left: 120px !important; width:155px !important; position: relative;}
+.error{position: absolute; bottom: 5px;left: 100px; line-height: 20px; font-size: 12px; font-style: normal;}
+.login_btn input{background: #20988e;color: #FFFFFF; cursor: pointer; outline: none; border: none; padding: 8px 40px; margin-top: 15px; margin-left: 90px;_margin-left: 45px; display: inline-block; font-size: 17px;border-radius: 5px; -webkit-border-radius:5px ;-moz-border-radius:5px ;-ms-border-radius:5px ;-o-border-radius:5px ;}
+.login_btn1 input{background: #aaaaaa;color: #FFFFFF; cursor: pointer; outline: none; border: none; padding: 8px 40px; margin-top: 15px; margin-left: 10px;_margin-left: 45px; display: inline-block; font-size: 17px;border-radius: 5px; -webkit-border-radius:5px ;-moz-border-radius:5px ;-ms-border-radius:5px ;-o-border-radius:5px ;}
